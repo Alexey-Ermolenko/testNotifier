@@ -68,18 +68,3 @@ SELECT
   FROM order_status_log_uniq oslu
  GROUP BY oslu.created_at, oslu.status_id, oslu.order_id
 HAVING oslu.status_id = 1;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
