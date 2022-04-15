@@ -16,12 +16,16 @@
 
 ### Запуск
 
-1. <code>git clone https://github.com/Alexey-Ermolenko/testNotifier.git</code>
+1. git clone https://github.com/Alexey-Ermolenko/testNotifier.git
 2. <code>cd project folder</code>
 3. <code>docker-compose up -d</code>
 4. Перейти в докер контейнер <code> docker exec -ti testtasklocal-phpfpm-1 /bin/sh</code>, где <code>testtasklocal-phpfpm-1</code> - имя контейнера
 5. выполнить миграции <code>php yii migrate/up</code>
 6. Выполнить команду на запуск оправки сообщений <code>php yii command/send-message</code>
+7. Веб-приложение доступно на http://localhost:8083
 
 Через крон, можно будет настроить на сервере подобной командой (Запуск 1 раз в сутки)
 <code>0 0 1 0 0 root php /var/www/yii command/send-message</code>
+
+
+<code>TODO: необходимо доделать миграцию на создание новых тестовых данных модели Notification</code>
