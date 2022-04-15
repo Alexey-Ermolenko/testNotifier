@@ -26,12 +26,6 @@ $config = [
             ],
         ],
         'db' => $db,
-        'telegramNotifier' => [
-            'class'  => 'app\components\services\TelegramNotifier',
-        ],
-        'smsNotifier' => [
-            'class' => 'app\components\services\SmsNotifier',
-        ],
         'notifier' => [
             'class' => 'app\components\Notifier',
         ],
