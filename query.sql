@@ -39,8 +39,6 @@ CREATE TABLE `order_status_log_uniq` (
 ID;Current title status;Prelast title status;Prelast date status
 112;Status 1;Status 2;2022-01-01 00:00:00
 */
-
-Запрос 1:
 SELECT t.ID, 
 	   sos.title AS 'Current title status',
        (SELECT sos.title 
