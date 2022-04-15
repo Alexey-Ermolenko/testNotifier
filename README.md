@@ -13,3 +13,13 @@
 
 Отправку сообщения сделать либо на job, либо на консольной команде (запуск кроном).
 Саму интеграцию с telegram и sms писать не нужно, просто функция send() которая возвращает true.
+
+
+
+notification
+id
+text
+integrator
+status
+create_date
+send_date
